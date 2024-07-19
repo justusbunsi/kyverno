@@ -737,6 +737,7 @@ The chart values are organised per component.
 | cleanupJobs.updateRequests.image.pullPolicy | string | `nil` | Image pull policy Defaults to image.pullPolicy if omitted |
 | cleanupJobs.updateRequests.imagePullSecrets | list | `[]` | Image pull secrets |
 | cleanupJobs.updateRequests.schedule | string | `"*/10 * * * *"` | Cronjob schedule |
+| cleanupJobs.updateRequests.suspend | bool | `false` | Pause cleanup job |
 | cleanupJobs.updateRequests.threshold | int | `10000` | Reports threshold, if number of updateRequests are above this value the cronjob will start deleting them |
 | cleanupJobs.updateRequests.history | object | `{"failure":1,"success":1}` | Cronjob history |
 | cleanupJobs.updateRequests.podSecurityContext | object | `{}` | Security context for the pod |
@@ -759,6 +760,7 @@ The chart values are organised per component.
 | cleanupJobs.ephemeralReports.image.pullPolicy | string | `nil` | Image pull policy Defaults to image.pullPolicy if omitted |
 | cleanupJobs.ephemeralReports.imagePullSecrets | list | `[]` | Image pull secrets |
 | cleanupJobs.ephemeralReports.schedule | string | `"*/10 * * * *"` | Cronjob schedule |
+| cleanupJobs.ephemeralReports.suspend | bool | `false` | Pause cleanup job |
 | cleanupJobs.ephemeralReports.threshold | int | `10000` | Reports threshold, if number of updateRequests are above this value the cronjob will start deleting them |
 | cleanupJobs.ephemeralReports.history | object | `{"failure":1,"success":1}` | Cronjob history |
 | cleanupJobs.ephemeralReports.podSecurityContext | object | `{}` | Security context for the pod |
@@ -781,6 +783,7 @@ The chart values are organised per component.
 | cleanupJobs.clusterEphemeralReports.image.pullPolicy | string | `nil` | Image pull policy Defaults to image.pullPolicy if omitted |
 | cleanupJobs.clusterEphemeralReports.imagePullSecrets | list | `[]` | Image pull secrets |
 | cleanupJobs.clusterEphemeralReports.schedule | string | `"*/10 * * * *"` | Cronjob schedule |
+| cleanupJobs.clusterEphemeralReports.suspend | bool | `false` | Pause cleanup job |
 | cleanupJobs.clusterEphemeralReports.threshold | int | `10000` | Reports threshold, if number of reports are above this value the cronjob will start deleting them |
 | cleanupJobs.clusterEphemeralReports.history | object | `{"failure":1,"success":1}` | Cronjob history |
 | cleanupJobs.clusterEphemeralReports.podSecurityContext | object | `{}` | Security context for the pod |

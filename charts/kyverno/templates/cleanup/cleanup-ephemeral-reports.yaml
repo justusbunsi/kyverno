@@ -11,6 +11,7 @@ spec:
   concurrencyPolicy: Forbid
   successfulJobsHistoryLimit: {{ .Values.cleanupJobs.ephemeralReports.history.success }}
   failedJobsHistoryLimit: {{ .Values.cleanupJobs.ephemeralReports.history.failure }}
+  suspend: {{ .Values.cleanupJobs.ephemeralReports.suspend }}
   jobTemplate:
     spec:
       backoffLimit: {{ .Values.cleanupJobs.ephemeralReports.backoffLimit }}

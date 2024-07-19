@@ -714,6 +714,9 @@ cleanupJobs:
     # -- Cronjob schedule
     schedule: '*/10 * * * *'
 
+    # -- Pause cleanup job
+    suspend: false
+
     # -- Reports threshold, if number of updateRequests are above this value the cronjob will start deleting them
     threshold: 10000
 
@@ -794,6 +797,9 @@ cleanupJobs:
     # -- Cronjob schedule
     schedule: '*/10 * * * *'
 
+    # -- Pause cleanup job
+    suspend: false
+
     # -- Reports threshold, if number of updateRequests are above this value the cronjob will start deleting them
     threshold: 10000
 
@@ -873,6 +879,9 @@ cleanupJobs:
 
     # -- Cronjob schedule
     schedule: '*/10 * * * *'
+
+    # -- Pause cleanup job
+    suspend: false
 
     # -- Reports threshold, if number of reports are above this value the cronjob will start deleting them
     threshold: 10000
